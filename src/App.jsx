@@ -572,7 +572,7 @@ function App() {
                     color: 'primary.main',
                     '&:hover': {
                       bgcolor: 'primary.main',
-                      color: '#050505',
+                      color: 'white',
                     }
                   }}
                 >
@@ -590,7 +590,7 @@ function App() {
                     color: 'primary.main',
                     '&:hover': {
                       bgcolor: 'primary.main',
-                      color: '#050505',
+                      color: 'white',
                     }
                   }}
                 >
