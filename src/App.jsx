@@ -544,7 +544,7 @@ function App() {
                   }}
                   sx={{
                     bgcolor: 'primary.main',
-                    color: '#050505',
+                    color: 'white',
                     fontWeight: 700,
                     px: 3,
                     borderRadius: 3,
@@ -552,6 +552,9 @@ function App() {
                     '&:hover': {
                       bgcolor: 'primary.light',
                       boxShadow: '0 16px 34px rgba(255, 122, 24, 0.36)',
+                    },
+                    '& .MuiSvgIcon-root': {
+                      color: 'white'
                     }
                   }}
                 >
@@ -1151,7 +1154,7 @@ function App() {
                   WebkitTextFillColor: 'transparent',
                 }}
               >
-                Token Analysis Platform
+                Gtescope
               </Typography>
               
               <Typography 
@@ -1167,7 +1170,7 @@ function App() {
                   opacity: 0.9,
                 }}
               >
-                <GradientText>Fair launch scores</GradientText>, <Box component="span" sx={{ color: 'secondary.light', fontWeight: 600 }}>sniper alerts</Box> and <Box component="span" sx={{ color: 'success.main', fontWeight: 600 }}>detailed market analysis</Box> to manage your token investments safely.
+                <GradientText>Bundle</GradientText>, <Box component="span" sx={{ color: 'secondary.light', fontWeight: 600 }}>sniper alerts</Box> analysis to manage your token investments safely.
               </Typography>
               
               {/* Search Section */}

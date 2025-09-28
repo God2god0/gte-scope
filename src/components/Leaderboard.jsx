@@ -62,7 +62,7 @@ const mockKOLData = [
   },
   {
     rank: 4,
-    username: 'crypto_whale',
+    username: '0x3555...3535',
     userId: '2X4H5Y',
     avatar: '',
     metrics: { wins: 15, losses: 8 },
@@ -71,7 +71,7 @@ const mockKOLData = [
   },
   {
     rank: 5,
-    username: 'moon_trader',
+    username: '0x7A2B...9F4C',
     userId: '9KpL2M',
     avatar: '',
     metrics: { wins: 12, losses: 5 },
@@ -80,7 +80,7 @@ const mockKOLData = [
   },
   {
     rank: 6,
-    username: 'diamond_hands',
+    username: '0x8E1D...6B3A',
     userId: '3NqR7S',
     avatar: '',
     metrics: { wins: 8, losses: 3 },
@@ -89,7 +89,7 @@ const mockKOLData = [
   },
   {
     rank: 7,
-    username: 'bull_market',
+    username: '0x4F9C...2E7B',
     userId: '5TvW9X',
     avatar: '',
     metrics: { wins: 20, losses: 12 },
@@ -98,7 +98,7 @@ const mockKOLData = [
   },
   {
     rank: 8,
-    username: 'hodl_master',
+    username: '0x6B8A...1F3E',
     userId: '8YzA4B',
     avatar: '',
     metrics: { wins: 6, losses: 2 },
@@ -107,7 +107,7 @@ const mockKOLData = [
   },
   {
     rank: 9,
-    username: 'defi_king',
+    username: '0x3D7F...9C2A',
     userId: '1HjK6L',
     avatar: '',
     metrics: { wins: 25, losses: 18 },
@@ -116,7 +116,7 @@ const mockKOLData = [
   },
   {
     rank: 10,
-    username: 'nft_hunter',
+    username: '0x5E9B...4D8C',
     userId: '7MnP3Q',
     avatar: '',
     metrics: { wins: 14, losses: 9 },
@@ -269,9 +269,6 @@ const Leaderboard = () => {
           >
             Leaderboards
           </Typography>
-          <Typography variant="h6" color="text.secondary" sx={{ maxWidth: 600, mx: 'auto' }}>
-            Top performing traders in the crypto space
-          </Typography>
         </Box>
 
         {/* Most Profitable Trader Leaderboard */}
@@ -280,7 +277,7 @@ const Leaderboard = () => {
             <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
               <EmojiEvents sx={{ color: 'primary.main', mr: 1, fontSize: 28 }} />
               <Typography variant="h5" sx={{ fontWeight: 700 }}>
-                Most Profitable Trader
+                Most Profitable Traders
               </Typography>
             </Box>
                 
