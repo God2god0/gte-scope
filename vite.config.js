@@ -6,5 +6,21 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true
+  },
+  build: {
+    rollupOptions: {
+      external: [
+        'puppeteer',
+        'puppeteer-core',
+        '@puppeteer/browsers'
+      ]
+    }
+  },
+  optimizeDeps: {
+    exclude: [
+      'puppeteer',
+      'puppeteer-core',
+      '@puppeteer/browsers'
+    ]
   }
 })
