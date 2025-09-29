@@ -5,20 +5,13 @@ A modern token analysis platform that helps you analyze new token launches and m
 ## What it does
 
 - **Token Search**: Find any token by name or contract address
-- **Fair Launch Score**: Get a reliability score from 0-100
-- **Sniper Alerts**: Detect suspicious early buying patterns
+- **Bundle Detection**: Track wallet connections and bundle analysis
+- **Sniper Detection**: Detect suspicious early buying patterns
 - **Price Charts**: Interactive 24-hour price visualization
-- **Detailed Analytics**: Top10 buyer share, volatility, MDD, liquidity signals
+- **Detailed Analytics**: Wallet distribution, volatility, MDD, liquidity signals
 - **Social Links**: Direct access to Twitter and website
 - **Trading Calculator**: Liquidation price and TP/SL calculator for leveraged positions
 
-## Tech Stack
-
-- **Frontend**: React 18 + Vite
-- **UI**: Material-UI with custom glassmorphism design
-- **Charts**: Chart.js with react-chartjs-2
-- **Data**: Real-time data from CoinGecko API
-- **Styling**: Modern CSS with gradient effects
 
 ## Quick Start
 
@@ -40,9 +33,9 @@ npm run dev
 2. Click "Analyze" to get detailed insights
 3. Review the results:
    - Token info and price chart
-   - Fair launch score (A+ to D rating)
-   - Sniper alert status
-   - Top10 buyer concentration
+   - Bundle wallet analysis
+   - Sniper detection alerts
+   - Wallet distribution
    - Volatility and maximum drawdown
    - Liquidity signals
 
@@ -64,29 +57,23 @@ The platform includes two powerful calculators:
 
 ## Analysis Criteria
 
-### Fair Launch Score (0-100)
+### Bundle Detection
+- Track wallet connections and relationships
+- Analyze bundle wallet distribution
+- Monitor coordinated buying patterns
+- Identify potential manipulation groups
 
-**A) Buyer Concentration (0-40 points)**
-- Top10 buyer share in first 60 minutes
-- Sniper activity in first minute
-- Unique buyer count
+### Sniper Detection
+- Detect suspicious early buying patterns
+- Single wallet >30% volume in first minute → red flag
+- Monitor rapid large transactions
+- Alert on coordinated sniper activity
 
-**B) LP Behavior (0-35 points)**
-- Initial LP ratio
-- Lock/burn status
-- 24h LP withdrawals
-- Tax/blacklist transparency
-
-**C) Price Stability (0-25 points)**
-- 24h volatility (σ/µ)
-- Maximum drawdown (MDD)
-- Volume/depth signals
-
-### Sniper Alert
-Single wallet >30% volume in first minute → red flag
-
-### Top10 Buyer Share
-Percentage of total "net buys" from Top10 wallets in first 60 minutes
+### Wallet Distribution
+- Analyze top wallet holders
+- Track wallet concentration
+- Monitor wallet connections
+- Identify potential bundle groups
 
 ### Volatility & MDD
 σ/µ (variability) and maximum drawdown analysis
